@@ -83,12 +83,14 @@ What the heck is that?! Well, originally, it was this:
 </name>
 ```
 
-The TEXT between **@** and **&@** correspond to MODS elements, and also happen to correspond to the instance variables in our Ruby objects. Luckily, Open Refine doesn't care, because it's consistent. What you _should_ care about are two separators. When the data is in Open Refine, for maximum refinability you should, in order:
+The TEXT between **@** and **&@** correspond to MODS elements, and also happen to correspond to the instance variables in our Ruby objects. Luckily, Open Refine doesn't care, because it's consistent. What you _should_ care about are two separators. When the data is in Open Refine, for maximum refinability you should, IN ORDER:
 
 1. Separate all rows you want to normalize by **^**. _(Edit cells -> Split multi-valued cells.. -> ^)_
 2. Separate all columns you want to normalize by **%%** _(Edit column -> Split into several columns -> Separator: **|**)_
 
 Don't want to do that for every column? Go grab the text from **/lib/helpers/json_rows.txt**, click on **Apply** in the **Undo/Redo** column, paste the text, and click **Perform operations.** Then do the same with **json_columns.txt**
+
+If you reverse the order of those operations, bad things will happen.
 
 When you've finished your transformations and want to merge everything back together again, you'll have to work with GREL a little bit. Firstly, Open Refine hates blank values. Try to combine columsn with blank values and it says "no." So you need to temporarily assign a value to all blank columns for columns you need to join. To do that, click **Edit cells -> Transform...** and paste the following code:
 
