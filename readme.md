@@ -4,7 +4,7 @@ This library is intended to take hand-created Metadata Object Description Schema
 The majority of this repo is written in/for Ruby 2.0.0. There are a few snippets of JSON and GREL included to make Open Refine less onerous. 
 
 ## Caveat
-These scripts are still very much in beta, if not alpha. Not all classes have been instantiated, and most classes don't yet have methods for setting attribute values (though those won't be difficult to add, and you can feel free to ass them yourself). The converters are currently only convert the elements/attributes I needed them to, namely: 
+These scripts are still very much in beta, if not alpha. Not all classes have been instantiated, and most classes don't yet have methods for setting attribute values (though those won't be difficult to add, and you can feel free to add them yourself. Getter methods do exist.) The converters are currently only convert the elements/attributes I needed them to, namely: 
 
 * identifier
 * title > element children
