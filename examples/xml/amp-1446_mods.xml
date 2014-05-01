@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd" displayLabel="not a PURL">
+  <titleInfo lang="eng">
+    <title>Organically Grown in Vermont Conference Materials</title>
+  </titleInfo>
+  <identifier type="local">455-011-003-001</identifier>
+  <name type="corporate" authority="naf" authorityURI="http://id.loc.gov/authorities/names" valueURI="http://id.loc.gov/authorities/names/n2009068320">
+    <namePart>Earth's Best Baby Foods</namePart>
+    <role>
+      <roleTerm type="text" authority="marcrelator">sponsor</roleTerm>
+    </role>
+    <role>
+      <roleTerm type="code" authority="marcrelator">spn</roleTerm>
+    </role>
+  </name>
+  <typeOfResource>text</typeOfResource>
+  <genre authority="lcgft">ephemera</genre>
+  <originInfo>
+    <place>
+      <placeTerm type="text">United States, Vermont, Middlebury</placeTerm>
+    </place>
+    <publisher>Earth's Best Baby Foods</publisher>
+    <dateIssued encoding="w3cdtf">1989-08</dateIssued>
+  </originInfo>
+  <language authorityURI="http://id.loc.gov/vocabulary/iso639-2s" valueURI="http://id.loc.gov/vocabulary/iso639-2/eng">
+    <languageTerm type="text" authority="iso639-2b">English</languageTerm>
+    <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+  </language>
+  <physicalDescription>
+    <form>Folder containing handouts and publications</form>
+    <extent>11 items</extent>
+    <note type="organization">item</note>
+    <reformattingQuality>access</reformattingQuality>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <internetMediaType>application/pdf</internetMediaType>
+  </physicalDescription>
+  <tableOfContents>Pamphlet: Earth's Best Baby Food</tableOfContents>
+  <tableOfContents>Organic Food Matters: The Journal of Sustainable Agriculture, vol. II, no. 2, Summer 1989</tableOfContents>
+  <tableOfContents>Letter dated August 30, 1989: Jon Corcoran to Kathleen Merrigan. Enclosure: Transcript of conference comments</tableOfContents>
+  <tableOfContents>Up on the northern fringe, growers are going organic. Photocopy of article reprint from The Boston Globe, June 4, 1989</tableOfContents>
+  <tableOfContents>State of Vermont Executive Department: A Proclamation. National Organically Grown Week, August 11-20, 1989</tableOfContents>
+  <tableOfContents>Agenda: Organically Grown in Vermont</tableOfContents>
+  <tableOfContents>Pamphlets: The Natural Organic Farmers Association of Vermont, Certified Organic: What it means to you</tableOfContents>
+  <tableOfContents>Luncheon Menu: Organically Grown in Vermont</tableOfContents>
+  <tableOfContents>Guest List: Organically Grown in Vermont</tableOfContents>
+  <tableOfContents>Regenerating America's Agriculture. Photocopy of article from Building Economic Alternatives, Summer 1989</tableOfContents>
+  <tableOfContents>Notable and Quotable</tableOfContents>
+  <abstract displayLabel="Scope and content">Consists of one folder containing materials presumably distributed at the Organically Grown in Vermont Conference, August 19, 1989.  Materials include an agenda, attendee list and luncheon menu from the event; various promotional pamphlets; a periodical; photocopies of articles and quotes pertaining to organic agriculture; and a photocopy of the proclamation signed by Madeleine M. Kunin, Governor of Vermont, designating National Organically Grown Week in 1989. Also enclosed is a follow-up letter from the conference organizer to Kathleen Merrigan thanking her for speaking at the event.</abstract>
+  <note>The folder containing the conference materials has hand-written annotations on the front and back covers.</note>
+  <subject authority="lcsh">
+    <topic>Organic farming--United States--Congresses</topic>
+    <topic>Agriculture--Vermont--Congresses</topic>
+  </subject>
+  <subject authority="geonames">
+    <geographic>United States, Vermont</geographic>
+  </subject>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Dr. Kathleen A. Merrigan Collection</title>
+    </titleInfo>
+  </relatedItem>
+  <accessCondition type="useAndReproduction">Please contact Special Collections for reproduction information.</accessCondition>
+  <accessCondition type="restrictionOnAccess">The collection is open for research.</accessCondition>
+  <location displayLabel="purl">
+    <physicalLocation>National Agricultural Library, Special Collections (Beltsville, MD)</physicalLocation>
+    <holdingSimple>
+      <copyInformation>
+        <shelfLocator>Merrigan Collection (c455) Box 11, Folder 3</shelfLocator>
+      </copyInformation>
+    </holdingSimple>
+  </location>
+  <recordInfo>
+    <descriptionStandard>dacs</descriptionStandard>
+    <recordContentSource>dnal</recordContentSource>
+  </recordInfo>
+</mods>

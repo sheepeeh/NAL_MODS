@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <titleInfo lang="eng">
+    <title>Correspondence regarding testing and limits for genetically modified organisms (GMOs) in organic products</title>
+  </titleInfo>
+  <identifier type="local">455-056-005-003</identifier>
+  <name type="personal" authority="naf" authorityURI="http://id.loc.gov/authorities/names" valueURI="http://id.loc.gov/authorities/names/">
+    <namePart>Merrigan, Kathleen (Kathleen Ann)</namePart>
+    <namePart type="given">Kathleen (Kathleen Ann)</namePart>
+    <namePart type="family">Merrigan</namePart>
+    <namePart type="termsOfAddress">Dr.</namePart>
+    <namePart type="date">1959-</namePart>
+    <affiliation>United States. Agricultural Marketing Service</affiliation>
+    <role>
+      <roleTerm type="text" authority="marcrelator">correspondent</roleTerm>
+    </role>
+    <role>
+      <roleTerm type="code" authority="marcrelator">crp</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>Jones, Keith</namePart>
+    <namePart type="given">Keith</namePart>
+    <namePart type="family">Jones</namePart>
+    <role>
+      <roleTerm type="text" authority="marcrelator">correspondent</roleTerm>
+    </role>
+    <role>
+      <roleTerm type="code" authority="marcrelator">crp</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>Fernandez, Michael</namePart>
+    <namePart type="given">Michael</namePart>
+    <namePart type="family">Fernandez</namePart>
+    <affiliation>Carmel Valley Ranch</affiliation>
+    <role>
+      <roleTerm type="text" authority="marcrelator">correspondent</roleTerm>
+    </role>
+    <role>
+      <roleTerm type="code" authority="marcrelator">crp</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>Malanoski, Margaret A.</namePart>
+    <namePart type="given">Margaret</namePart>
+    <namePart type="family">Malanoski</namePart>
+    <role>
+      <roleTerm type="text" authority="marcrelator">correspondent</roleTerm>
+    </role>
+    <role>
+      <roleTerm type="code" authority="marcrelator">crp</roleTerm>
+    </role>
+  </name>
+  <typeOfResource>text</typeOfResource>
+  <genre authority="lcgft">correspondence</genre>
+  <originInfo>
+    <dateCreated encoding="w3cdtf">2000-02</dateCreated>
+  </originInfo>
+  <language>
+    <languageTerm type="code" authority="iso639-2b" authorityURI="http://id.loc.gov/vocabulary/iso639-2">eng</languageTerm>
+    <languageTerm type="text" authority="iso639-2b">English</languageTerm>
+  </language>
+  <physicalDescription>
+    <form>letter-size paper</form>
+    <extent>3 items</extent>
+    <note type="organization">item</note>
+    <reformattingQuality>access</reformattingQuality>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <internetMediaType>application/pdf</internetMediaType>
+  </physicalDescription>
+  <tableOfContents>Keith Jones email message to Kathleen Merrigan regarding GMO prohibition and organic product content; attachment</tableOfContents>
+  <tableOfContents>Michael Fernandez facsimile transmittal to Kathleen Merrigan regarding comments on current proposals on GMO limits</tableOfContents>
+  <tableOfContents>Margaret A. Malanoski email message to Kathleen Merrigan regarding comments about GMO prohibition in organic rule</tableOfContents>
+  <subject authority="lcsh">
+    <topic>Transgenic organisms--Government policy--United States</topic>
+    <topic>Natural foods--Standards--United States</topic>
+    <topic>Organic farming--Standards--United States</topic>
+  </subject>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Dr. Kathleen A. Merrigan Collection</title>
+    </titleInfo>
+  </relatedItem>
+  <accessCondition type="useAndReproduction">Please contact Special Collections for reproduction information.</accessCondition>
+  <accessCondition type="restrictionOnAccess">The collection is open for research.</accessCondition>
+  <location>
+    <physicalLocation>National Agricultural Library, Special Collections (Beltsville, MD)</physicalLocation>
+    <copyInformation>
+      <shelfLocator>Merrigan Collection (c455) Box 56, Folder 5</shelfLocator>
+    </copyInformation>
+  </location>
+  <recordInfo>
+    <descriptionStandard>dacs</descriptionStandard>
+    <recordContentSource>dnal</recordContentSource>
+  </recordInfo>
+</mods>

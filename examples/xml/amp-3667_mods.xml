@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <titleInfo lang="eng">
+    <title>National Campaign for Sustainable Agriculture organic committee meeting materials</title>
+  </titleInfo>
+  <identifier type="local">455-062-003-001</identifier>
+  <name type="corporate">
+    <namePart>National Campaign for Sustainable Agriculture</namePart>
+    <role>
+      <roleTerm type="text" authority="marcrelator">Organizer</roleTerm>
+    </role>
+    <role>
+      <roleTerm type="code" authority="marcrelator">orm</roleTerm>
+    </role>
+  </name>
+  <typeOfResource>text</typeOfResource>
+  <originInfo>
+    <place>
+      <placeTerm type="text">Washington, D.C.</placeTerm>
+    </place>
+    <dateIssued encoding="w3cdtf">2004-03-01</dateIssued>
+    <dateIssued encoding="w3cdtf" point="start">2004-03-01</dateIssued>
+    <dateIssued encoding="w3cdtf" point="end">2004-03-02</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm type="code" authority="iso639-2b" authorityURI="http://id.loc.gov/vocabulary/iso639-2">eng</languageTerm>
+    <languageTerm type="text" authority="iso639-2b">English</languageTerm>
+  </language>
+  <physicalDescription>
+    <form>letter-size and 5.5-inch by 8.5-inch paper</form>
+    <extent>16 items</extent>
+    <note type="organization">item</note>
+    <reformattingQuality>access</reformattingQuality>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <internetMediaType>application/pdf</internetMediaType>
+  </physicalDescription>
+  <tableOfContents>National Organic Standards Board working draft: "Compatibility with organic production and handling"</tableOfContents>
+  <tableOfContents>Handwritten notes</tableOfContents>
+  <tableOfContents>National Campaign for Sustainable Agriculture Organic Committee Meeting draft agenda</tableOfContents>
+  <tableOfContents>National Organic Coalition information</tableOfContents>
+  <tableOfContents>Farm news: TCH hens enjoying their porches</tableOfContents>
+  <tableOfContents>Appeal of case challenging USDA regulations which violate the OFPA and compromise organic standards</tableOfContents>
+  <tableOfContents>Draft survey regarding attitudes toward the National Organic Program</tableOfContents>
+  <tableOfContents>The National Organic Program (NOP) - Implementation update - Emerging trends and challenges</tableOfContents>
+  <tableOfContents>Draft: Organic steering committee process</tableOfContents>
+  <tableOfContents>White paper outline: Proposal: National Organic Program revised process for regulation, guidance, and appeals</tableOfContents>
+  <tableOfContents>§10.90 Food and Drug Administration regulations, guidelines, recommendations, and agreements</tableOfContents>
+  <tableOfContents>National Campaign for Sustainable Agriculture organic committee stated purpose, goals, and priority work for 2004 and beyond</tableOfContents>
+  <tableOfContents>Discussion worksheet: Statutory language changes to OFPA</tableOfContents>
+  <tableOfContents>FY '05 appropriations for sustainable and organic agricultural programs</tableOfContents>
+  <tableOfContents>National organic certification cost-share activity 2003</tableOfContents>
+  <tableOfContents>Members of Congress in the organic caucus as of 1-04</tableOfContents>
+  <subject authority="lcsh">
+    <topic>Sustainable agriculture--Political aspects--United States</topic>
+    <topic>Pressure groups--Political activity--United States</topic>
+  </subject>
+  <subject>
+    <titleInfo>
+      <title>National Organic Program (U.S.)</title>
+    </titleInfo>
+  </subject>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Dr. Kathleen A. Merrigan Collection</title>
+    </titleInfo>
+  </relatedItem>
+  <accessCondition type="useAndReproduction">Please contact Special Collections for reproduction information.</accessCondition>
+  <accessCondition type="restrictionOnAccess">The collection is open for research.</accessCondition>
+  <location>
+    <physicalLocation>National Agricultural Library, Special Collections (Beltsville, MD)</physicalLocation>
+    <copyInformation>
+      <shelfLocator>Merrigan Collection (c455) Box 62, Folder 2</shelfLocator>
+    </copyInformation>
+  </location>
+  <recordInfo>
+    <descriptionStandard>dacs</descriptionStandard>
+    <recordContentSource>dnal</recordContentSource>
+  </recordInfo>
+</mods>
