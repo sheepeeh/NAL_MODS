@@ -54,7 +54,7 @@ Your CSV is going to look a little bit strange -- I sacrificed beauty for functi
 @FULL&@ Leahy, Patrick J.%%@GIVEN&@ Patrick%%@FAMILY&@ Leahy%%@AFFIL&@ United States. Congress. Senate%%@ROLE_TEXT&@ addressee%%@ROLE_CODE&@ rcp^@FULL&@ Merrigan, Kathleen (Kathleen Ann), 1959-%%@GIVEN&@ Kathleen%%@FAMILY&@ Merrigan%%@ROLE_TEXT&@ correspondent%%@ROLE_CODE&@ crp
 ```
 
-What the hell is that?! Well, originally, it was this:
+What the heck is that?! Well, originally, it was this:
 ```
 <name type="personal" valueURI="http://id.loc.gov/authorities/names/n77013301" authorityURI="http://id.loc.gov/authorities/names" authority="naf">
     <namePart>Leahy, Patrick J.</namePart>
@@ -90,11 +90,11 @@ The TEXT between **@** and **&@** correspond to MODS elements, and also happen t
 
 Don't want to do that for every column? Go grab the text from **/lib/helpers/json_rows.txt**, click on **Apply** in the **Undo/Redo** column, paste the text, and click **Perform operations.** Then do the same with **json_columns.txt**
 
-When you've finished your transformations and want to merge everything back together again, you'll have to work with GREL a little bit. Firstly, Open Refine hates blank values. Try to combine columsn with blank values and it says "no." So you need to temporarily assign a value to all blank columns for columns you need to join. To do that, click _Edit cells -> Transform..._ and paste the following code:
+When you've finished your transformations and want to merge everything back together again, you'll have to work with GREL a little bit. Firstly, Open Refine hates blank values. Try to combine columsn with blank values and it says "no." So you need to temporarily assign a value to all blank columns for columns you need to join. To do that, click **Edit cells -> Transform...** and paste the following code:
 
 `if(isBlank(value), "!NULL!",value)`
 
-After you've done that for all columns which will be joined, join said columns with the following code _( Again in Edit cells -> Transform...)_:
+After you've done that for all columns which will be joined, join said columns with the following code **(Again in Edit cells -> Transform...)**:
 
 ```
 if(cells["COLLUMN NAME 1"].value != "!NULL!", if(cells["COLLUMN NAME 2"].value != "!NULL!",cells["COLLUMN NAME 1"].value + "%%" + cells["COLLUMN NAME 2"].value,cells["COLLUMN NAME 1"].value),value)
@@ -107,4 +107,4 @@ Finally, get rid of those fake null values like so:
 
 Ta da!
 
-Now export the results using **Export -> Custom tabular exporter...**, set _Download -> Custom separator_ to a pipe **|**, and you're good to go.
+Now export the results using **Export -> Custom tabular exporter...**, set **Download -> Custom separator** to a pipe **|**, and you're good to go.
