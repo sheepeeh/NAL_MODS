@@ -1,0 +1,466 @@
+[
+
+{
+    "op": "core/column-split",
+    "description": "Split column original_filename by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "original_filename",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column new_filename by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "new_filename",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column identifier by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "identifier",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column title by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "title",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column name by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "name",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column origin by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "origin",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column place by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "place",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column date_copyright by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "date_copyright",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column startdate_copyright by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "startdate_copyright",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column enddate_copyright by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "enddate_copyright",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column date_created by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "date_created",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column startdate_created by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "startdate_created",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column enddate_created by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "enddate_created",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column date_issued by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "date_issued",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column startdate_issued by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "startdate_issued",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column enddate_issued by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "enddate_issued",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column genre by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "genre",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column language by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "language",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column pdesc_form by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "pdesc_form",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column pdesc_extent by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "pdesc_extent",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column shelf_loc by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "shelf_loc",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column table_of_contents by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "table_of_contents",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column subj_topic by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "subj_topic",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column subj_time by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "subj_time",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column subj_genre by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "subj_genre",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column subj_geo by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "subj_geo",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column subj_hgeo by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "subj_hgeo",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column subj_name by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "subj_name",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+
+{
+    "op": "core/column-split",
+    "description": "Split column subj_title by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "subj_title",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "%",
+    "regex": false,
+    "maxColumns": 0
+  },
+]

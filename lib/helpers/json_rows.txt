@@ -1,0 +1,526 @@
+[
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column original_filename",
+    "columnName": "original_filename",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column new_filename",
+    "columnName": "new_filename",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column identifier",
+    "columnName": "identifier",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column title",
+    "columnName": "title",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column name",
+    "columnName": "name",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column origin",
+    "columnName": "origin",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column place",
+    "columnName": "place",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column date_copyright",
+    "columnName": "date_copyright",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column startdate_copyright",
+    "columnName": "startdate_copyright",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column enddate_copyright",
+    "columnName": "enddate_copyright",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column date_created",
+    "columnName": "date_created",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column startdate_created",
+    "columnName": "startdate_created",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column enddate_created",
+    "columnName": "enddate_created",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column date_issued",
+    "columnName": "date_issued",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column startdate_issued",
+    "columnName": "startdate_issued",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column enddate_issued",
+    "columnName": "enddate_issued",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column genre",
+    "columnName": "genre",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column language",
+    "columnName": "language",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column pdesc_form",
+    "columnName": "pdesc_form",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column pdesc_extent",
+    "columnName": "pdesc_extent",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column shelf_loc",
+    "columnName": "shelf_loc",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column table_of_contents",
+    "columnName": "table_of_contents",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_topic",
+    "columnName": "subj_topic",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_time",
+    "columnName": "subj_time",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_genre",
+    "columnName": "subj_genre",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_geo",
+    "columnName": "subj_geo",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_hgeo",
+    "columnName": "subj_hgeo",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_name",
+    "columnName": "subj_name",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_title",
+    "columnName": "subj_title",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  }
+]
+[
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column original_filename",
+    "columnName": "original_filename",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column new_filename",
+    "columnName": "new_filename",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column identifier",
+    "columnName": "identifier",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column title",
+    "columnName": "title",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column name",
+    "columnName": "name",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column origin",
+    "columnName": "origin",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column place",
+    "columnName": "place",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column date_copyright",
+    "columnName": "date_copyright",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column startdate_copyright",
+    "columnName": "startdate_copyright",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column enddate_copyright",
+    "columnName": "enddate_copyright",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column date_created",
+    "columnName": "date_created",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column startdate_created",
+    "columnName": "startdate_created",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column enddate_created",
+    "columnName": "enddate_created",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column date_issued",
+    "columnName": "date_issued",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column startdate_issued",
+    "columnName": "startdate_issued",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column enddate_issued",
+    "columnName": "enddate_issued",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column genre",
+    "columnName": "genre",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column language",
+    "columnName": "language",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column pdesc_form",
+    "columnName": "pdesc_form",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column pdesc_extent",
+    "columnName": "pdesc_extent",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column shelf_loc",
+    "columnName": "shelf_loc",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column table_of_contents",
+    "columnName": "table_of_contents",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_topic",
+    "columnName": "subj_topic",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_time",
+    "columnName": "subj_time",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_genre",
+    "columnName": "subj_genre",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_geo",
+    "columnName": "subj_geo",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_hgeo",
+    "columnName": "subj_hgeo",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_name",
+    "columnName": "subj_name",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  },
+
+{
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column subj_title",
+    "columnName": "subj_title",
+    "keyColumnName": "original_filename",
+    "separator": "^",
+    "mode": "plain"
+  }
+]
