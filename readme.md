@@ -106,4 +106,4 @@ Finally, get rid of those fake null values like so:
 
 Ta da!
 
-Now export the results using *Export -> Custom tabular exporter...* and you're good to go.
+Now export the results using *Export -> Custom tabular exporter...*, set _Download -> Custom separator_ to a pipe *|*, and you're good to go.
