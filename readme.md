@@ -84,6 +84,7 @@ What the hell is that?! Well, originally, it was this:
 ```
 
 The TEXT between **@** and **&@** correspond to MODS elements, and also happen to correspond to the instance variables in our Ruby objects. Luckily, Open Refine doesn't care, because it's consistent. What you _should_ care about are two separators. When the data is in Open Refine, for maximum refinability you should, in order:
+
 1. Separate all rows you want to normalize by **^**. _(Edit cells -> Split multi-valued cells.. -> ^)_
 2. Separate all columns you want to normalize by **%%** _(Edit column -> Split into several columns -> Separator: **|**)_
 
