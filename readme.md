@@ -39,9 +39,10 @@ The command line usage also needs to be refined. At the moment, directories and 
 # Usage
 
 `mods_to_csv` convert a directory of MODS files to CSV
+* Expects XML to be well-formed
 
 `csv_to_mods` convert a CSV to MODS files
 * This expects a pipe-delimited CSV file
 * The default output directory is __CurrentDir/normalized__
 * By default, output files are named __OriginalFilename_normed.xml__
-* The most common cause of failure is a stray un-merged cell (if you've split cells in Open Refine for normalization, they must be re-joined before export).
+* The most common cause of failure is a stray un-merged cell (if you've split cells in Open Refine for normalization, they must be re-joined before export)
