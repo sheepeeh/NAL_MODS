@@ -51,7 +51,9 @@ The command line usage also needs to be refined. At the moment, directories and 
 Your CSV is going to look a little bit strange -- I sacrificed beauty for functionality. You might, for instance, see something like this in the *name* column:
 
 ```
-@FULL&@ Leahy, Patrick J.%%@GIVEN&@ Patrick%%@FAMILY&@ Leahy%%@AFFIL&@ United States. Congress. Senate%%@ROLE_TEXT&@ addressee%%@ROLE_CODE&@ rcp^@FULL&@ Merrigan, Kathleen (Kathleen Ann), 1959-%%@GIVEN&@ Kathleen%%@FAMILY&@ Merrigan%%@ROLE_TEXT&@ correspondent%%@ROLE_CODE&@ crp
+@FULL&@ Leahy, Patrick J.%%@GIVEN&@ Patrick%%@FAMILY&@ Leahy%%@AFFIL&@ United States. Congress. Senate%%@ROLE_TEXT&@
+addressee%%@ROLE_CODE&@ rcp^@FULL&@ Merrigan, Kathleen (Kathleen Ann), 1959-%%@GIVEN&@ Kathleen%%@FAMILY&@
+Merrigan%%@ROLE_TEXT&@ correspondent%%@ROLE_CODE&@ crp
 ```
 
 What the heck is that?! Well, originally, it was this:
