@@ -36,7 +36,7 @@ These scripts are still very much in beta, if not alpha. Not all classes have be
 * subject > name
 * subject > title
 
-The command line usage also needs to be refined. At the moment, directories and such need to be hardcoded in the relevant /bin file. Soon, this will be possible with command line arguments. Similarly, there's no error handling built in yet.
+The command line usage also needs to be refined. At the moment, directories and such need to be hardcoded in the relevant line of /lib/nal_mods/config.rb. Soon, this will be possible with command line arguments. Similarly, there's no error handling built in yet.
 
 # Usage
 Set the values in `/lib/nal_mods/config.rb` according to the comments within the file. (Specify your source directory, etc.)
