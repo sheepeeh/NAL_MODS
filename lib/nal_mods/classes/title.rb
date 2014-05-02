@@ -1,4 +1,4 @@
-require 'nokogiri'
+require 'rexml/document'
 require_relative '../modules/printable'
 require_relative '../modules/retrievable'
 include REXML
