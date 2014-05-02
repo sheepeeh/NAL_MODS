@@ -1,10 +1,12 @@
 # About
-This library is intended to take hand-created Metadata Object Description Schema (MODS) XML files, convert them to a CSV (pipe-delimited by default) file for use in OpenRefine, and then convert a CSV exported from Open Refine into new, freshly normalized MODS XML files. 
+This library is intended to take hand-created Metadata Object Description Schema (MODS) XML files, convert them to a CSV (pipe-delimited by default) file for use in OpenRefine, and then convert a CSV exported from Open Refine into new, freshly normalized MODS XML files. The classes and methods within it can be used to build custom CSVs for other purposes. 
+
+If you want to create CSVs from MODS for either Internet Archive batch files or Omeka, you might want to take a look at https://github.com/sheepeeh/NAL_metadata instead. The scripts in that repo will eventually be updated to make use of this class library.
 
 The majority of this repo is written in/for Ruby 2.0.0. There are a few snippets of JSON and GREL included to make Open Refine less onerous. 
 
 ## Caveat
-These scripts are still very much in beta, if not alpha. Not all classes have been instantiated, and most classes don't yet have methods for setting attribute values (though those won't be difficult to add, and you can feel free to add them yourself. Getter methods do exist.) The converters are currently only convert the elements/attributes I needed them to, namely: 
+These scripts are still very much in beta, if not alpha. Not all classes have been instantiated, and most classes don't yet have methods for setting attribute values (though those won't be difficult to add, and you can feel free to add them yourself. Getter methods do exist.) The converters currently only convert the elements/attributes I needed them to, namely: 
 
 * identifier
 * title > element children
@@ -40,18 +42,18 @@ The command line usage also needs to be refined. At the moment, directories and 
 
 `mods_to_csv` convert a directory of MODS files to CSV
 * Expects XML to be well-formed
-* Change _../examples/#{dseed}_to_norm.csv_ on line 47 to where you want your CSV to be output, and what you want to name it
-* Change line 61 to reflect your desired filename structure for normalized files
-* Change ../examples/xml on line 269 to the directory of MODS files you want to transform
+* Change _../examples/#{dseed}_to_norm.csv_ on `line 47` to where you want your CSV to be output, and what you want to name it
+* Change `line 61` to reflect your desired filename structure for normalized files
+* Change _../examples/xml_ on `line 269` to the directory of MODS files you want to transform
 
 `csv_to_mods` convert a CSV to MODS files
 * This expects a pipe-delimited CSV file
 * The default output directory is __CurrentDir/normalized__
 * By default, output files are named __OriginalFilename_normed.xml__
 * The most common cause of failure is a stray un-merged cell (if you've split cells in Open Refine for normalization, they must be re-joined before export)
-* Change _../examples/xml_ on line 41 to the directory holding the original (non-normalized) MODS files
-* Change _../examples_ on line 270 to the directory where you want your normalized files output to
-* Change _../examples/example.csv_ to the CSV you're using to generate new MODS files
+* Change _../examples/xml_ `on line 41` to the directory holding the original (non-normalized) MODS files
+* Change _../examples_ on `line 270` to the directory where you want your normalized files output to
+* Change _../examples/example.csv_ on `line 282` to the CSV you're using to generate new MODS files
 
 ## CSV Output
 Your CSV is going to look a little bit strange -- I sacrificed beauty for functionality. You might, for instance, see something like this in the *name* column:
