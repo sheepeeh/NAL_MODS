@@ -40,12 +40,18 @@ The command line usage also needs to be refined. At the moment, directories and 
 
 `mods_to_csv` convert a directory of MODS files to CSV
 * Expects XML to be well-formed
+* Change _../examples/#{dseed}_to_norm.csv_ on line 47 to where you want your CSV to be output, and what you want to name it
+* Change line 61 to reflect your desired filename structure for normalized files
+* Change ../examples/xml on line 269 to the directory of MODS files you want to transform
 
 `csv_to_mods` convert a CSV to MODS files
 * This expects a pipe-delimited CSV file
 * The default output directory is __CurrentDir/normalized__
 * By default, output files are named __OriginalFilename_normed.xml__
 * The most common cause of failure is a stray un-merged cell (if you've split cells in Open Refine for normalization, they must be re-joined before export)
+* Change _../examples/xml_ on line 41 to the directory holding the original (non-normalized) MODS files
+* Change _../examples_ on line 270 to the directory where you want your normalized files output to
+* Change _../examples/example.csv_ to the CSV you're using to generate new MODS files
 
 ## CSV Output
 Your CSV is going to look a little bit strange -- I sacrificed beauty for functionality. You might, for instance, see something like this in the *name* column:
