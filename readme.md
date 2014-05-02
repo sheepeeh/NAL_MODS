@@ -130,21 +130,21 @@ Want to create your own CSV? No problem! Here's  how the pieces of `mods_to_csv`
     - All variable names must begin with **@**
 * Complex elements (elements with children) tend to have a `get_elementname` method. Simple elements like identifier and genre should just be pushed into the array using `@array_name << variable_name`
 * Basic construction for getting element text:
-```
-xmldoc.elements.each("mods/topLevelElement") do |e|
-    element_name = ModsElement_name.new
-    element_name.get_element_name(e)
-    element_name.vals2csv(@array_name)
-end
-```
-For title, this looks like
-```
-xmldoc.elements.each("mods/titleInfo") do |e|
-    title = ModsTitle.new
-    title.get_title(e)
-    title.vals2csv(@titles)
-end
-```
+    ```
+    xmldoc.elements.each("mods/topLevelElement") do |e|
+        element_name = ModsElement_name.new
+        element_name.get_element_name(e)
+        element_name.vals2csv(@array_name)
+    end
+    ```
+    For title, this looks like
+    ```
+    xmldoc.elements.each("mods/titleInfo") do |e|
+        title = ModsTitle.new
+        title.get_title(e)
+        title.vals2csv(@titles)
+    end
+    ```
 (You could also copy-paste the elements you want to use from the base script. They are all commented.)
 
 * ...note that you don't need to do this for child elements. The top-level element will generally grab all children.
