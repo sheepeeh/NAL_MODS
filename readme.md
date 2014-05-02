@@ -3,7 +3,7 @@ This library is intended to take hand-created Metadata Object Description Schema
 
 If you want to create CSVs from MODS for either Internet Archive batch files or Omeka, you might want to take a look at https://github.com/sheepeeh/NAL_metadata instead. The scripts in that repo will eventually be updated to make use of this class library.
 
-The majority of this repo is written in/for Ruby 2.0.0. There are a few snippets of JSON and GREL included to make Open Refine less onerous. The code has been tested up to Ruby 2.1.1p76.
+The majority of this repo is written in/for Ruby 2.0.0. The code has been tested up to Ruby 2.1.1p76. There are a few snippets of JSON and GREL included to make Open Refine less onerous. 
 
 ## Caveat
 These scripts are still very much in beta, if not alpha. Not all classes have been instantiated, and most classes don't yet have methods for setting attribute values (though those won't be difficult to add, and you can feel free to add them yourself. Getter methods do exist.) The converters currently only convert the elements/attributes I needed them to, namely: 
@@ -117,9 +117,10 @@ Ta da!
 
 Now export the results using **Export -> Custom tabular exporter...**, set **Download -> Custom separator** to a pipe **|**, and you're good to go.
 
-## Changing it up
-### Building a different CSV
-Want to create your own CSV? No problem! Here's  how the pieces of `csv_to_mods` work.
+# Changing it up
+
+## Building a different CSV
+Want to create your own CSV? No problem! Here's  how the pieces of `mods_to_csv` work.
 
 * Check in **/lib/nal_mods/classes** to be sure there is a class defined for the element you want to use. Let me  know if it's missing, and I'll look at creating it for you.
 * `line 50` builds the headers for the CSV file. Name these however you'd like, but don't use spaces. Fields are delimited with pipes.
@@ -136,4 +137,45 @@ xmldoc.elements.each("mods/topLevelElement") do |e|
     element_name.vals2csv(@array_name)
 end
 ```
+For title, this looks like
+```
+xmldoc.elements.each("mods/titleInfo") do |e|
+    title = ModsTitle.new
+    title.get_title(e)
+    title.vals2csv(@titles)
+end
+```
+(You could also copy-paste the elements you want to use from the base script. They are all commented.)
+
 * ...note that you don't need to do this for child elements. The top-level element will generally grab all children.
+* `line 239` remove the default variables, and enter your new variables, separated by commas
+* `line_240` do the same thing, but remove the @s and surround the name in quotes (comma comes after the quotes)
+* `line 258` change this to match your variable names. If you named your variables and headers the same, you can do this pretty quickly by
+    - Copy/pasting `line 50`
+    - Add **#{** after the opening quote and **}** before the closing quote
+    - Do a Find/Replace All to replace **|** with **}|{**}
+* That's it!
+
+## Outputting from a customized CSV
+Working from `csv_to_mods`
+* Check in the class for the element in question in `/lib/nal_mods/classes` to see if it has a `set_text` method.
+    - If it does, the new text is set like this:
+    ```
+    element_array = []
+    csv2obj("#{line[:header]}", ModsElementName, element_array)
+
+    element_array.each do |element|
+        i = element_array.index(element)
+        i += 1
+
+        xmldoc.elements.each("mods/topLevelElement[#{i}]") do |e|
+        element.set_text(e)
+        end             
+    end
+    ```
+    - If it doesn't, the new text is set like this:
+    ```
+    xmldoc.elements["mods/elementName"].text = line[:header] unless xmldoc.elements["mods/elementName"].nil?
+```
+* Congratulations on your normalized XML files!
+
