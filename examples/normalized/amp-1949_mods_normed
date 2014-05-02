@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mods displayLabel="not a PURL" xmlns:mods="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <titleInfo lang="eng">
+    <title>H.R. 4971</title>
+    <subTitle>To increase the emphasis on urban agricultural issues in the Department of Agriculture [...]</subTitle>
+  </titleInfo>
+  <identifier type="local">455-081-007-005</identifier>
+  <name authority="naf" authorityURI="http://id.loc.gov/authorities/names" type="corporate" valueURI="http://id.loc.gov/authorities/names/n 79107874">
+    <namePart>United States. Congress. House</namePart>
+    <role>
+      <roleTerm authority="marcrelator" type="text">creator</roleTerm>
+    </role>
+    <role>
+      <roleTerm authority="marcrelator" type="code">cre</roleTerm>
+    </role>
+  </name>
+  <name authority="naf" authorityURI="http://id.loc.gov/authorities/names" type="personal" valueURI="http://id.loc.gov/authorities/names/no2010071417">
+    <namePart type="date">1959-</namePart>
+    <affiliation>United States. Department of Agriculture. Office of the Secretary</affiliation>
+    <role>
+      <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+    </role>
+    <role>
+      <roleTerm authority="marcrelator" type="code">edt</roleTerm>
+    </role>
+    <namePart type="given">Kathleen (Kathleen Ann)</namePart>
+    <namePart type="family">Merrigan</namePart>
+  </name>
+  <typeOfResource>text</typeOfResource>
+  <genre authority="aat">bills (legislative records)</genre>
+  <originInfo>
+    <dateIssued encoding="w3cdtf">2010-03-25</dateIssued>
+    <issuance>single unit</issuance>
+    <place>
+      <placeTerm type="text">United States, Washington, D.C.</placeTerm>
+    </place>
+    <publisher>Government Printing Office</publisher>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="text">English</languageTerm>
+    <languageTerm authority="iso639-2b" authorityURI="http://id.loc.gov/vocabulary/iso639-2" type="code">eng</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>25 pages</extent>
+    <note type="organization">item</note>
+    <reformattingQuality>access</reformattingQuality>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <internetMediaType>application/pdf</internetMediaType>
+  </physicalDescription>
+  <note>"Subtitle: To increase the emphasis on urban agricultural issues in the Department of Agriculture through the establishment of a new office to ensure that Department authorities are used to effectively encourage local agricultural production and increase the availability of fresh food in urban areas, particularly underserved communities experiencing hunger, poor nutrition, obesity, and food insecurity, and for other purposes."&#13;
+This is a marked-up copy of the bill and includes Kathleen Merrigan's handwritten notes in red and yellow highlighting of various portions of text.&#13;
+This document is in a folder titled "Miscellaneous Know Your Farmer, Know Your Food materials".</note>
+  <subject authority="lcsh">
+    <topic>Agricultural laws and legislation</topic>
+    <topic>Urban agriculture--United States</topic>
+    <topic>Hunger--United States</topic>
+    <topic>Malnutrition--United States</topic>
+    <genre>Legislative bills</genre>
+    <topic>Local foods--United States</topic>
+    <topic>Food security--United States</topic>
+  </subject>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Dr. Kathleen A. Merrigan Collection</title>
+    </titleInfo>
+  </relatedItem>
+  <accessCondition type="useAndReproduction">Please contact Special Collections for reproduction information.</accessCondition>
+  <accessCondition type="restrictionOnAccess">The collection is open for research.</accessCondition>
+  <location>
+    <physicalLocation>National Agricultural Library, Special Collections (Beltsville, MD)</physicalLocation>
+    <copyInformation>
+      <shelfLocator>Merrigan Collection (c455) Box 81, Folder 7</shelfLocator>
+    </copyInformation>
+  </location>
+  <recordInfo>
+    <descriptionStandard>dacs</descriptionStandard>
+    <recordContentSource>dnal</recordContentSource>
+  </recordInfo>
+  <subject>
+    <name authority="naf" authorityURI="http://id.loc.gov/authorities/names" type="personal" valueURI="http://id.loc.gov/authorities/names/no2010020822">
+      <namePart>United States. Congress (111th, 2nd session : 2010)</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name authorityURI="http://id.loc.gov/authorities/names" type="conference" valueURI="http://id.loc.gov/authorities/names/n79008243">
+      <namePart>United States. Department of Agriculture</namePart>
+    </name>
+  </subject>
+  <subject>
+    <titleInfo>
+      <title>Greening Food Deserts Act</title>
+    </titleInfo>
+  </subject>
+</mods>

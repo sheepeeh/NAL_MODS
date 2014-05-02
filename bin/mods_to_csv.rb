@@ -2,6 +2,9 @@ require 'csv'
 require 'rexml/document'
 require 'benchmark'
 
+# Options
+require_relative '../lib/nal_mods/config'
+
 # Mixins
 require_relative '../lib/nal_mods/modules/retrievable'
 require_relative '../lib/nal_mods/modules/printable'
@@ -31,8 +34,6 @@ include REXML
 
 module NalMods
 
-
-
 	def pjoin(arr)
 		arr.compact!
 		arr = arr.join("^")
@@ -42,9 +43,8 @@ module NalMods
 		
 		btime = Benchmark.realtime {
 
-		Dir.mkdir("../examples/normalized") unless Dir.exists?("../examples/normalized")
-		dseed = File.basename("#{target_dir}")
-		f = File.open("../examples/#{dseed}_to_norm.csv","a")
+		Dir.mkdir("#{@script_options[:normalized_dir]}") unless Dir.exists?("#{@script_options[:normalized_dir]}")
+		f = File.open("#{@script_options[:csv_destination]}","a")
 
 		# Print header
 		f.puts "original_filename|new_filename|identifier|title|name|origin|place|date_copyright|startdate_copyright|enddate_copyright|date_created|startdate_created|enddate_created|date_issued|startdate_issued|enddate_issued|genre|language|pdesc_form|pdesc_extent|shelf_loc|table_of_contents|subj_topic|subj_time|subj_genre|subj_geo|subj_hgeo|subj_name|subj_title"
@@ -58,7 +58,7 @@ module NalMods
 			xmldoc = (Document.new File.new "#{xml_file}")
 			original_filename = File.basename(xml_file)
 			fseed = File.basename(xml_file,".xml")
-			new_filename = "../examples/normalized/#{fseed}_normed.xml"
+			new_filename = "#{fseed}#{@script_options[:normalized_suffix]}"
 
 
 			# Create element arrays/variables
@@ -266,4 +266,4 @@ end
 
 # Specify a directory of MODS.xml files
 include NalMods
-build_csv("../examples/xml")
+build_csv("#{@script_options[:mods_source]}")

@@ -3,6 +3,9 @@ require 'benchmark'
 require 'rexml/document'
 include REXML
 
+# Options
+require_relative '../lib/nal_mods/config'
+
 # Mixins
 require_relative '../lib/nal_mods/modules/retrievable'
 require_relative '../lib/nal_mods/modules/printable'
@@ -38,7 +41,7 @@ module NalMods
 		CSV.foreach(from_csv, :headers => true, :header_converters => :symbol, :col_sep => "|") do |line|
 
 			# Change ../examples/xml to the actual source directory
-			xmldoc = (Document.new File.new "../examples/xml/#{line[:original_filename]}") if File.exists?("../examples/xml/#{line[:original_filename]}")
+			xmldoc = (Document.new File.new "#{@script_options[:mods_source]}/#{line[:original_filename]}") if File.exists?("#{@script_options[:mods_source]}/#{line[:original_filename]}")
 			xmldoc.context[:attribute_quote] = :quote
 
 			stime = Time.now
@@ -267,7 +270,7 @@ module NalMods
 
 			formatter = Formatters::Default.new
 
-			File.open("../examples/#{line[:new_filename]}","w") do |result| # Change ../examples to desired output directory
+			File.open("#{@script_options[:normalized_dir]}/#{line[:new_filename]}","w") do |result| # Change ../examples to desired output directory
 				formatter.write(xmldoc,result)
 			end
 		end
@@ -279,4 +282,4 @@ end
 
 # Specify the CSV to  use.
 include NalMods
-build_mods("../examples/example.csv")
+build_mods("#{@script_options[:csv_destination]}")
