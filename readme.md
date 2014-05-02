@@ -160,22 +160,22 @@ Want to create your own CSV? No problem! Here's  how the pieces of `mods_to_csv`
 Working from `csv_to_mods`
 * Check in the class for the element in question in `/lib/nal_mods/classes` to see if it has a `set_text` method.
     - If it does, the new text is set like this:
-    ```
-    element_array = []
-    csv2obj("#{line[:header]}", ModsElementName, element_array)
-
-    element_array.each do |element|
-        i = element_array.index(element)
-        i += 1
-
-        xmldoc.elements.each("mods/topLevelElement[#{i}]") do |e|
-        element.set_text(e)
-        end             
-    end
-    ```
+        ```
+        element_array = []
+        csv2obj("#{line[:header]}", ModsElementName, element_array)
+    
+        element_array.each do |element|
+            i = element_array.index(element)
+            i += 1
+    
+            xmldoc.elements.each("mods/topLevelElement[#{i}]") do |e|
+            element.set_text(e)
+            end             
+        end
+        ```
     - If it doesn't, the new text is set like this:
-    ```
-    xmldoc.elements["mods/elementName"].text = line[:header] unless xmldoc.elements["mods/elementName"].nil?
-```
+        ```
+        xmldoc.elements["mods/elementName"].text = line[:header] unless xmldoc.elements["mods/elementName"].nil?
+        ```
 * Congratulations on your normalized XML files!
 
