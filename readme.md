@@ -153,7 +153,7 @@ Want to create your own CSV? No problem! Here's  how the pieces of `mods_to_csv`
 * `line 258` change this to match your variable names. If you named your variables and headers the same, you can do this pretty quickly by
     - Copy/pasting `line 50`
     - Add **#{** after the opening quote and **}** before the closing quote
-    - Do a Find/Replace All to replace **|** with **}|{**}
+    - Do a Find/Replace All to replace **|** with **}|{**
 * That's it!
 
 ## Outputting from a customized CSV
