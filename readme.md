@@ -98,7 +98,7 @@ Don't want to do that for every column? Go grab the text from **/lib/helpers/jso
 
 If you reverse the order of those operations, bad things will happen.
 
-When you've finished your transformations and want to merge everything back together again, you'll have to work with GREL a little bit. Firstly, Open Refine hates blank values. Try to combine columun with blank values and it says "no." So you need to temporarily assign a value to all blank cells in columns you need to join. To do that, click **Edit cells -> Transform...** and paste the following code:
+When you've finished your transformations and want to merge everything back together again, you'll have to work with GREL a little bit. Firstly, Open Refine hates blank values. Try to combine columns with blank values and it says "no." So you need to temporarily assign a value to all blank cells in the columns you need to join. To do that, click **Edit cells -> Transform...** and paste the following code:
 
 `if(isBlank(value), "!NULL!",value)`
 
