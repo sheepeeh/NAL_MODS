@@ -3,7 +3,7 @@ This library is intended to take hand-created Metadata Object Description Schema
 
 If you want to create CSVs from MODS for either Internet Archive batch files or Omeka, you might want to take a look at https://github.com/sheepeeh/NAL_metadata instead. The scripts in that repo will eventually be updated to make use of this class library.
 
-The majority of this repo is written in/for Ruby 2.0.0. There are a few snippets of JSON and GREL included to make Open Refine less onerous. 
+The majority of this repo is written in/for Ruby 2.0.0. There are a few snippets of JSON and GREL included to make Open Refine less onerous. The code has been tested up to Ruby 2.1.1p76.
 
 ## Caveat
 These scripts are still very much in beta, if not alpha. Not all classes have been instantiated, and most classes don't yet have methods for setting attribute values (though those won't be difficult to add, and you can feel free to add them yourself. Getter methods do exist.) The converters currently only convert the elements/attributes I needed them to, namely: 
@@ -36,17 +36,17 @@ These scripts are still very much in beta, if not alpha. Not all classes have be
 * subject > name
 * subject > title
 
-The command line usage also needs to be refined. At the moment, directories and such need to be hardcoded in the relevant line of /lib/nal_mods/config.rb. Soon, this will be possible with command line arguments. Similarly, there's no error handling built in yet.
+The command line usage also needs to be refined. At the moment, directories and such need to be hardcoded in the relevant line of `/lib/nal_mods/config.rb`. Soon, this will be possible with command line arguments. Similarly, there's no error handling built in yet.
 
 # Usage
-Set the values in `/lib/nal_mods/config.rb` according to the comments within the file. (Specify your source directory, etc.)
 
+After cloning this repository, edit the values in `/lib/nal_mods/config.rb` to specify your source directories and other options.  No external libraries or gems are necessary.
 
-`mods_to_csv` convert a directory of MODS files to CSV
-* Expects XML to be well-formed
+From the `NAL_MODS` directory, use `ruby bin/mods_to_csv.rb` to convert a directory of MODS files to CSV
+* This script expects XML to be well-formed
 
-`csv_to_mods` convert a CSV to MODS files
-* This expects a pipe-delimited CSV file
+From the `NAL_MODS` directory, use `ruby bin/csv_to_mods.rb` to convert a CSV to MODS files
+* This script expects a pipe-delimited CSV file
 * The default output directory is __CurrentDir/normalized__
 * By default, output files are named __OriginalFilename_normed.xml__
 * The most common cause of failure is a stray un-merged cell (if you've split cells in Open Refine for normalization, they must be re-joined before export)
