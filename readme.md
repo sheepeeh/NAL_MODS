@@ -1,7 +1,7 @@
 # About
 This library is intended to take hand-created Metadata Object Description Schema (MODS) XML files, convert them to a CSV (pipe-delimited by default) file for use in OpenRefine, and then convert a CSV exported from Open Refine into new, freshly normalized MODS XML files. The classes and methods within it can be used to build custom CSVs for other purposes. 
 
-If you want to create CSVs from MODS for either Internet Archive batch files or Omeka, you might want to take a look at https://github.com/sheepeeh/NAL_metadata instead. The scripts in that repo will eventually be updated to make use of this class library.
+If you want to create CSVs from MODS for either Internet Archive batch files or Omeka, you might want to take a look at https://github.com/sheepeeh/NAL_metadata instead. The scripts in that repo will eventually be updated to make use of this class library (as well as getting some better documentation).
 
 The majority of this repo is written in/for Ruby 2.0.0. The code has been tested up to Ruby 2.1.1p76. There are a few snippets of JSON and GREL included to make Open Refine less onerous. 
 
