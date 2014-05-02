@@ -116,3 +116,24 @@ Finally, get rid of those fake null values like so:
 Ta da!
 
 Now export the results using **Export -> Custom tabular exporter...**, set **Download -> Custom separator** to a pipe **|**, and you're good to go.
+
+## Changing it up
+### Building a different CSV
+Want to create your own CSV? No problem! Here's  how the pieces of `csv_to_mods` work.
+
+* Check in **/lib/nal_mods/classes** to be sure there is a class defined for the element you want to use. Let me  know if it's missing, and I'll look at creating it for you.
+* `line 50` builds the headers for the CSV file. Name these however you'd like, but don't use spaces. Fields are delimited with pipes.
+* `lines 64 - 90` setup the variables used to send MODS elements/attributes to the CSV.
+    - Generally speaking, you should setup blank arrays. `@variable_name = []`
+    - It will be easier if your variable names match your headers
+    - All variable names must begin with **@**
+* Complex elements (elements with children) tend to have a `get_elementname` method. Simple elements like identifier and genre should just be pushed into the array using `@array_name << variable_name`
+* Basic construction for getting element text:
+```
+xmldoc.elements.each("mods/topLevelElement") do |e|
+    element_name = ModsElement_name.new
+    element_name.get_element_name(e)
+    element_name.vals2csv(@array_name)
+end
+```
+* ...note that you don't need to do this for child elements. The top-level element will generally grab all children.
