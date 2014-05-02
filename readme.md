@@ -174,6 +174,7 @@ Working from `csv_to_mods`
         end
         ```
     - If it doesn't, the new text is set like this:
+        
         ```
         xmldoc.elements["mods/elementName"].text = line[:header] unless xmldoc.elements["mods/elementName"].nil?
         ```
