@@ -197,7 +197,7 @@ module NalMods
 
 
 
-			xmldoc.elements.each("mod/subject/hierarchicalGeographic") do |h|
+			xmldoc.elements.each("mods/subject/hierarchicalGeographic") do |h|
 				hgeo = ModsSubject::HGeo.new
 				hgeo.get_hgeo(h)
 				hgeo.vals2csv(@subj_hgeos)
