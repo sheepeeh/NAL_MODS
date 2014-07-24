@@ -128,7 +128,7 @@ Want to create your own CSV? No problem! Here's  how the pieces of `mods_to_csv`
     - Generally speaking, you should setup blank arrays. `@variable_name = []`
     - It will be easier if your variable names match your headers
     - All variable names must begin with **@**
-* Complex elements (elements with children) tend to have a `get_elementname` method. Simple elements like identifier and genre should just be pushed into the array using `@array_name << variable_name`
+* Complex elements (elements with children) tend to have a `get_elementname` method. Simple elements like identifier and genre do not, but are pushed into the array using `@array_name << variable_name`
 * Basic construction for getting element text:
     ```
     xmldoc.elements.each("mods/topLevelElement") do |e|
